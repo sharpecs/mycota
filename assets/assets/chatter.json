@@ -1,0 +1,132 @@
+{
+    "chatter": [ 
+      {
+        "intents": [
+          {
+            "c": "greeting",
+            "s": ["hi", "hey", "hello"]
+          },
+          {
+            "c": "goodbye",
+            "s": ["bye", "good bye", "goodbye"]
+          },
+          {
+            "c": "thanks",
+            "s": ["thanks", "thank you"]
+          },
+          {
+            "c": "well-being",
+            "s": ["how are you", "how are things"]
+          },
+          {
+            "c": "inquiry",
+            "s": ["up to much", "what are you doing"]
+          },
+          {
+            "c": "good-status",
+            "s": ["happy", "good", "well", "fantastic", "cool"]
+          },
+          {
+            "c": "bad-status",
+            "s": ["bad", "bored", "tired", "sad"]
+          },
+          {
+            "c": "info",
+            "s": ["tell me story", "tell me joke"]
+          },
+          {
+            "c": "swan-what",
+            "s": ["swan", "waterbird", "biggest", "what", "black", "largest", "bird"]
+          },
+          {
+            "c": "swan-eat",
+            "s": ["what", "swan", "eat", "black"]
+          },
+          {
+            "c": "largest-bird",
+            "s": ["largest", "bird", "biggest",""]
+          },
+          {
+            "c": "name-swan",
+            "s": ["swan", "scientific", "name", "latin", "term"]
+          },
+          {
+            "c": "whadjuk-swan",
+            "s": ["swan", "cygnus", "aboriginal", "noonghar", "noongar", "whadjuk", "term", "name","boodjar"]
+          },
+          {
+            "c": "park-today",
+            "s": ["what", "park", "carrol", "today"]
+          }
+        ]
+      },
+      {
+        "responses": [
+          {
+            "c": "greeting",
+            "s": ["Hello!", "Hi!", "Hey!", "Hi there!"]
+          },
+          {
+            "c": "goodbye",
+            "s": ["Goodbye", "See you later"]
+          },
+          {
+            "c": "thanks",
+            "s": ["You're welcome", "No problem"]
+          },
+          {
+            "c": "well-being",
+            "s": ["Fine... how are you?","Pretty well, how are you?","Fantastic, how are you?"]
+          },
+          {
+            "c": "inquiry",
+            "s": ["Nothing much", "Exciting things!"]
+          },
+          {
+            "c": "good-status",
+            "s": ["Glad to hear it"]
+          },
+          {
+            "c": "bad-status",
+            "s": ["Why?", "Cheer up buddy"]
+          },
+          {
+            "c": "info",
+            "s": ["What about?", "Once upon a time..."]
+          },
+          {
+            "c": "swan-what",
+            "s": ["The black swan is one of the larger birds found at the wetland breeding."]
+          },
+          {
+            "c": "largest-bird",
+            "s": ["The swan is one of the larger water birds.","The pelican is a large water bird at the park."]
+          },
+          {
+            "c": "name-swan",
+            "s": ["The scientific name for the black swan is Cygnus atratus."]
+          },
+          {
+            "c": "swan-eat",
+            "s": ["The swan will feed on weeds, tadpoles and invertebrates found in the water."]
+          },
+          {
+            "c": "whadjuk-swan",
+            "s": ["The black swan is known as Maali in Whadjuk boodjar."]
+          },
+          {
+            "c": "park-dec",
+            "s": ["The Australian Bluebell is flowering.","You may step on puffball fungi.","The Robin Red breast bush has bright red flowers.", "If you're lucky you might spot the Nankeen Night Heron.", "There are the Litte Black Cormorants", "May see the Little Pied Cormorant.", "There is a pet cat up to mischief!"]
+          },
+          {
+            "c": "park-nov",
+            "s": ["Banksia's are flowering around the park.","You may spot a Rainbow Beater!", "The Honey Myrtle is filled with purple flowers", "You could see plenty of sand wasps", "It's perfect time to see cygnats!", "You may see an Oblong Turtle."]
+          },
+          {
+            "c": "process",
+            "s": ["Hmm I don't know.","Not Sure?","Nice! Now i'm stumped","aww.. ask me something else!"]
+          }
+        ]
+      }
+    ]
+}
