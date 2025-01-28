@@ -1,1 +1,1 @@
-# mycota
+# MyCOTA
