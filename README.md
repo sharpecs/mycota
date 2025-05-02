@@ -4,7 +4,7 @@
 
 <figure>
     <center>
-    <img src="../assets/fungi-01.png">
+    <img src="./assets/fungi-01.png">
     <center>
     Fungal groups [L-R] : Patch, Rust, Puffball, Bracket, Jelly, Shelf, Mushroom
 </figure>
@@ -41,7 +41,7 @@ The data used for this purpose has been collected over a twelve-month period and
 
 <figure>
     <center>
-    <img src="../assets/mycota-01.png">
+    <img src="./assets/mycota-01.png">
     <center>
 </figure>
 
@@ -50,7 +50,7 @@ K-Means Clustering is the technique used to group the observational points by as
 
 <figure>
     <center>
-    <img src="../assets/mycota-02.png">
+    <img src="./assets/mycota-02.png">
     <center>
 </figure>
 
@@ -63,7 +63,7 @@ An approach to evaluate the influence of multiple factors is to apply a regressi
 
 <figure>
     <center>
-    <img src="../assets/mycota-03.png">
+    <img src="./assets/mycota-03.png">
     <center>
 </figure>
 
@@ -71,7 +71,7 @@ A correlation matrix can be used to visualise the strength a variable may have i
 
 <figure>
     <center>
-    <img src="../assets/mycota-04.png">
+    <img src="./assets/mycota-04.png">
     <center>
 </figure>
 
@@ -90,7 +90,7 @@ The most prolific group of fungi observed is the mushroom. The total number far 
 
 <figure>
     <center>
-    <img src="../assets/mycota-05.png">
+    <img src="./assets/mycota-05.png">
     <center>
 </figure>
 
@@ -98,7 +98,7 @@ The bar chart shows Zone 7 having the most diverse groups in the park. The only 
 
 <figure>
     <center>
-    <img src="../assets/mycota-06.png">
+    <img src="./assets/mycota-06.png">
     <center>
 </figure>
 
@@ -112,7 +112,7 @@ It was noted earlier that the quantity of mushrooms observed may impact the resu
 
 <figure>
     <center>
-    <img src="../assets/mycota-07.png"> 
+    <img src="./assets/mycota-07.png"> 
     <center>
     [ Histograms showing variable distributions ]
 </figure>
@@ -121,7 +121,7 @@ Looking at the statistics available for the chosen variables, the quantity, as e
 
 <figure>
     <center>
-    <img src="../assets/mycota-08.png"> 
+    <img src="./assets/mycota-08.png"> 
     <center>
     [ Histograms showing transformed variables ]
 </figure>
@@ -130,7 +130,7 @@ The chart for transformed variables shows little impact on Quantity. The matrix 
 
 <figure>
     <center>
-    <img src="../assets/mycota-09.png"> 
+    <img src="./assets/mycota-09.png"> 
     <center>
     [ Histograms showing standardised distributions ]
 </figure>
@@ -143,7 +143,7 @@ Like the correlation, the regression is evaluated with the variable values squar
 
 <figure>
     <center>
-    <img src="../assets/mycota-10.png">
+    <img src="./assets/mycota-10.png">
     <center>
 </figure>
 
@@ -205,7 +205,7 @@ Fortunately there are spatial regression functions that compensate for autocorre
 
 <figure>
     <center>
-    <img src="../assets/mycota-11.png">
+    <img src="./assets/mycota-11.png">
     <center>
 </figure>
 
@@ -346,7 +346,7 @@ The R-squared value is much higher than the previous, indicating a better-fittin
 
 <figure>
     <center>
-    <img src="../assets/mycota-12.png">
+    <img src="./assets/mycota-12.png">
     <center>
 </figure>
 
@@ -360,7 +360,7 @@ A geographically weighted model applies the weighted matrix to construct separat
 
 <figure>
     <center>
-    <img src="../assets/mycota-13.png">
+    <img src="./assets/mycota-13.png">
     <center>
 </figure>
 
@@ -376,7 +376,7 @@ Groups have a positive correlation direction with a stronger relationship toward
 
 <figure>
     <center>
-    <img src="../assets/mycota-15.png">
+    <img src="./assets/mycota-15.png">
     <center>
 </figure>
 
