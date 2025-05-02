@@ -114,25 +114,22 @@ It was noted earlier that the quantity of mushrooms observed may impact the resu
     <center>
     <img src="./assets/mycota-07.png"> 
     <center>
-    [ Histograms showing variable distributions ]
 </figure>
 
-Looking at the statistics available for the chosen variables, the quantity, as expected, is skewed to the left, showing the impact of mushrooms . This variable can be modified to attempt to bring its distribution closer to normality. A transformation modification can be achieved using the same logarithmic transformation applied to the variables.
+Looking at the above statistics available for the chosen variables, the Quantity is skewed to the left, showing it's potential strength of influence. This variable can be modified in an attempt to bring its distribution closer to normality. A modification can be achieved by using the same logarithmic transformation applied to each variable.
 
 <figure>
     <center>
     <img src="./assets/mycota-08.png"> 
     <center>
-    [ Histograms showing transformed variables ]
 </figure>
 
-The chart for transformed variables shows little impact on Quantity. The matrix previously indicated that Quantity had the least strength in the correlation of variables, making this variable unfit for the model, which will be dropped from standardisation . Although the chosen variables have similar scales, they will be converted to z-scores to facilitate comparison.
+The above chart for transformed variables shows little impact on Quantity. The matrix previously indicated that Quantity had the least strength in the correlation of variables, making this variable unfit for the model, which will be dropped from standardisation. Although the chosen variables have similar scales, they will be converted to z-scores to facilitate comparison.
 
 <figure>
     <center>
     <img src="./assets/mycota-09.png"> 
     <center>
-    [ Histograms showing standardised distributions ]
 </figure>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -342,7 +339,7 @@ S.E of regression   :      1.1504                Schwarz criterion     :     293
 
 ```
 
-The R-squared value is much higher than the previous, indicating a better-fitting model. The coefficients for group and role have a positive correlation, while substrate has a negative direction. The AIC for this model is also lower than the previous. In contrast to the spatial lag, spatial error regression models spatial interactions with the independent variables, assuming that errors are correlated with nearest neighbors .
+In this case, the R-squared is much lower than the lag summary, but these are adjusted for autocorrelation. The AIC here is also lower than the lag, indicating that the error model is a better fit. The coefficient correlation direction for the independent variables has not changed. Using the spatial error model, the results can be mapped.
 
 <figure>
     <center>
@@ -368,7 +365,7 @@ It was noted previously that substrates having a negative correlation direction 
 
 <figure>
     <center>
-    <img src="../assets/mycota-14.png">
+    <img src="./assets/mycota-14.png">
     <center>
 </figure>
 
@@ -382,7 +379,7 @@ Groups have a positive correlation direction with a stronger relationship toward
 
 The characteristics that define the role of fungi in this analysis are either symbiont, recycler, or parasite. The role had the strongest relationship with zones in the correlation matrix and is also strongly coupled with the group. The model has predicted no changes for this variable. The only parasitic group in the dataset is Rust, which has little impact (could not be quantified) on the park.
 
-A symbiotic relationship with fungi is critical for keeping ecosystems in balance and is therefore seen as ' Darwin's Blind Spot' within the patterns of evolution. However, this mutual partnership can shift to parasitism when conditions change. In this analysis , the model predicts no change in the role of fungi, suggesting that the park is in a healthy condition with a balanced ecosystem.
+A symbiotic relationship with fungi is critical for keeping ecosystems in balance and is therefore seen as Darwin's Blind Spot within the patterns of evolution. However, this mutual partnership can shift to parasitism when conditions change. In this analysis , the model predicts no change in the role of fungi, suggesting that the park is in a healthy condition with a balanced ecosystem.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
