@@ -4,7 +4,7 @@
 
 <figure>
     <center>
-    <img src="./assets/fungi-01.png">
+    <img src="./assets/mycota-00.png">
     <center>
     Fungal groups [L-R] : Patch, Rust, Puffball, Bracket, Jelly, Shelf, Mushroom
 </figure>
