@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
 
-# MYCOTA: A Regression Analysis on Fungi using Python.
+# MYCOTA: Regression Analysis on Fungi using Python.
 
 <figure>
     <center>
