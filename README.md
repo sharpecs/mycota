@@ -18,8 +18,7 @@ The purpose of this exercise is to understand the principles behind the followin
 
 * Geographically Weighted Regression (GWR) is another tool used to model spatially varying relationships. The main difference is that it creates separate models for each independent feature which may provide insights into additional factors related to that feature.
 
-Darwin's blind spot is a hypothesis that symbiosis is insignificant in nature. This analysis will investigate
-the hypothesis using the regression techniques and the observations collected.
+**Darwin's blind spot** is a hypothesis that symbiosis is insignificant in nature. This analysis will investigate the hypothesis using the regression techniques and the observations collected.
 
 
 ### Content
@@ -37,7 +36,7 @@ the hypothesis using the regression techniques and the observations collected.
 <!-- ABOUT THE PROJECT -->
 ### Segmentation
 
-The data used for this purpose has been collected over a twelve-month period and consists of observations from all biological kingdoms. To target distinct features in the park, the data has been segmented into smaller groups for more tailored insights.
+The data used for this purpose has been collected over a twelve-month period and consists of observations from all biological kingdoms. To target distinct features in the park, the data will be segmented into smaller groups for fragmented tailored insights.
 
 <figure>
     <center>
@@ -45,8 +44,7 @@ The data used for this purpose has been collected over a twelve-month period and
     <center>
 </figure>
 
-
-K-Means Clustering is the technique used to group the observational points by assigning each point to the nearest cluster centroid. These centroids are used to identify the hotspots or zones in the park. Within each zone, the concentration of fungi observations can then be identified, showing the distribution across the park. In this case, Zone 7 has the most observations, while Zone 10 has the least.
+K-Means Clustering is a method used to group observational points by assigning each point to the nearest cluster centroid. These centroids are used to identify the hotspots or zones in the park. Within each zone, the magnitude of fungi observations can then be identified, showing its distribution across the park. In this instance, a quarter of the observations came from Zone 7, while Zone 10 had less than five percent.
 
 <figure>
     <center>
@@ -59,7 +57,7 @@ K-Means Clustering is the technique used to group the observational points by as
 
 ### Correlation
 
-An approach to evaluate the influence of multiple factors is to apply a regression method that considers multiple explanatory variables known as independents to predict the outcome of a response variable called the dependent. From the data, the variables available for consideration are the number of fungi observed , the substrate it was seen on, the type of fungi, and its purpose in nature. The accuracy of this information is uncertain.
+An approach to evaluate the influence of multiple factors is to apply a regression method that considers multiple explanatory variables known as independents to predict the outcome of a response variable called the dependent variable. From the data, the variables available for consideration are the number of fungi observed, the substrate on which they were seen, the type of fungi, and their role or function in nature. The accuracy of this information is unknown.
 
 <figure>
     <center>
@@ -67,7 +65,7 @@ An approach to evaluate the influence of multiple factors is to apply a regressi
     <center>
 </figure>
 
-A correlation matrix can be used to visualise the strength a variable may have in relation to the zones created. In this case, looking at the zone column, the role (purpose in nature) has the strongest relationship. Lower correlated variables are still important in this situation, as they may add weight to the model when the relationship between the independents is spurious.
+A correlation matrix can be used to visualise the strength a variable may have in relation to the zones created. In this case, looking at the zone column, the role (function) has the strongest relationship. Lower correlated variables are still important in this situation, as they may add weight to the model when the relationship between the independents is spurious.
 
 <figure>
     <center>
@@ -75,7 +73,7 @@ A correlation matrix can be used to visualise the strength a variable may have i
     <center>
 </figure>
 
-The most prolific group of fungi observed is the mushroom. The total number far exceeds that of the others and may skew the results inappropriately. The groups have been defined by the fruiting structure of the fungi for the purpose of this exercise.
+The most prolific group of fungi observed is the mushroom. The total number far exceeds that of the others and may influence the results inappropriately. These groups have been defined by the fruiting structure of the fungi for the purpose of this exercise.
 
 | Group | Features |
 | ----------- | ----------- |
@@ -94,7 +92,7 @@ The most prolific group of fungi observed is the mushroom. The total number far 
     <center>
 </figure>
 
-The bar chart shows Zone 7 having the most diverse groups in the park. The only group not in the zone is the Jelly. The main point is that a group does exist in each zone , making it a good candidate for the model.
+The above chart shows Zone 7 having the most diverse groups in the park. The *shelf* group has been observed in this zone only, whereas *Jelly* is the only group not found in this zone. *Mushroom*, the most prolific group, is seen nearly everywhere at the park except zones 4 and 10. Groups will obviously be chosen for the regression.
 
 <figure>
     <center>
@@ -102,13 +100,13 @@ The bar chart shows Zone 7 having the most diverse groups in the park. The only 
     <center>
 </figure>
 
-Since there are groups in every zone, there must be substrates in every zone as well. As expected, the chart shows a greater range of substrates observed in Zone 7. Being coupled with groups , the substrates will have a similar correlation and also be good candidates . The matrix also identifies group and role as having the strongest correlation among all variables. Since the group is selected, the role will also be selected. There are still some reservations regarding quantity, as this variable has the weakest correlation.
+As expected, the chart shows a greater range of substrate usage in Zone 7. Being coupled with *Group*, the substrates will have a similar correlation and will also be used for the model. The matrix identifies *Group* and *Role* as having the strongest correlation among all variables. Since the *Group* is going to be used, the *Role* will be applied as well. There are still some reservations regarding *Quantity*, as this variable has the weakest strength for zones.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Standardisation
 
-It was noted earlier that the quantity of mushrooms observed may impact the results from the model. To ensure this variable does not influence the model, all variables can be standardised by converting them to z-scores. A z-score is the number of standard deviations that a value differs from the mean for all variables.
+It was noted earlier that the quantity of mushrooms observed may impact the results from the model. To ensure this variable does not influence the model, all variables can be standardised by converting them to z-scores. A z-score is the number of standard deviations by which a value differs from the mean for all variables.
 
 <figure>
     <center>
@@ -116,7 +114,7 @@ It was noted earlier that the quantity of mushrooms observed may impact the resu
     <center>
 </figure>
 
-Looking at the above statistics available for the chosen variables, the Quantity is skewed to the left, showing it's potential strength of influence. This variable can be modified in an attempt to bring its distribution closer to normality. A modification can be achieved by using the same logarithmic transformation applied to each variable.
+The *Quantity* distribution spread is the only chart showing values skewed to left as a result of the number of *Mushroom* observed. This variable can be modified to attempt to bring its distribution closer to normality. A transformation modification can be achieved using the same logarithmic transformation applied to the variables.
 
 <figure>
     <center>
@@ -124,7 +122,7 @@ Looking at the above statistics available for the chosen variables, the Quantity
     <center>
 </figure>
 
-The above chart for transformed variables shows little impact on Quantity. The matrix previously indicated that Quantity had the least strength in the correlation of variables, making this variable unfit for the model, which will be dropped from standardisation. Although the chosen variables have similar scales, they will be converted to z-scores to facilitate comparison.
+The chart for transformed variables shows little impact on *Quantity*. The matrix previously indicated that *Quantity* had the least strength in the correlation of variables. This variable can be seen as unfit and will be dropped from standardisation. Although the selected variables have similar scales, they will be converted to z-scores to facilitate comparison.
 
 <figure>
     <center>
@@ -136,7 +134,7 @@ The above chart for transformed variables shows little impact on Quantity. The m
 
 ### Regression
 
-Like the correlation, the regression is evaluated with the variable values squared. Higher values indicate a better fit. The chosen modeling technique applies the 'least- squares ' line, which is the distance from the 'best-fit' squared and then added. This results in values having a smaller range. The main interest in any modeling result is data phenomena. To identify whether the chosen variables are adequate for the model, the difference between the predicted and actual values is charted.
+Like the correlation, the regression is evaluated with the variable values squared. Higher values indicate a better fit. The chosen modeling technique applies the 'least-squares' line, which measures the distances from the 'best-fit' squared and then sums them. This results in values having a smaller range. The main interest in any modeling result is data phenomena. To identify whether the chosen variables are adequate for the model, the difference between the predicted and actual values is charted.
 
 <figure>
     <center>
@@ -144,7 +142,7 @@ Like the correlation, the regression is evaluated with the variable values squar
     <center>
 </figure>
 
-The residual is an attribute that can be easily extracted from the model. It shows the difference between modeled values and actual values. By plotting the residuals as a weight ( Kernel Density Estimation) and overlaying its normal curve with the mean and standard deviation curve, any changes can be visualized . In this case, there is a shift indicating some type of phenomenon worth investigating.
+The residual is an attribute that can be easily extracted from the model. It shows the difference between modeled values and actual values. By plotting the residuals as a weight (Kernel Density Estimation) and overlaying the normal curve with the mean and standard deviation curves, potential hidden structures within the residuals can be identified. In this case, there is a shift indicating some type of phenomenon worth investigating.
 
 ```
 REGRESSION RESULTS
@@ -190,15 +188,13 @@ Koenker-Bassett test              3          2.701           0.4400
 
 ```
 
-The summary report produced for this model shows weak quantified results. The R-squared value, which is interpreted as the percentage of variance with the independents, is quite low compared to the values displayed in the correlation matrix. The strongest correlation with the zone in the matrix is with the role. Also worth noting is that the coefficient for role shows a positive correlation, as does substrate . However, group has a negative correlation. A positive correlation indicates that the strength of the relationship increases towards the higher numbered zones, while a negative correlation indicates a weaker relationship towards the higher zones. Since the residual chart showed some type of change, the modeled results should still be mapped.
+The summary report produced for this model shows a weak fit. The *R-squared* is very low; it is interpreted as the percentage of variance explained by *Zone* using the covariates. The covariate section describes the relationship between each independent variable and *Zone*. The coefficient however shows a positive correlation for *Role* and *substrate* possibly indicating a diverse range of functioning fungi and substrates towards the higher zones in the park. Conversely, the diversity of fungi groups diminishes. Since the residual chart showed some type of change, the modelled values will be applied with mapped residuals.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Spatial Regression
 
-One of the reasons for a weak summary result is that even though a positive and negative correlation direction exist, there is no correlation (neagtive Adjusted R-squared) between the sequence of values at different parts of the distribution. Meaning the zones used to identify as a dependent values must have been autocorrelated when processed by the model. The ordinary least squares algorithm assumes the variables are not aurocorrelated. A problem with applying clustering to geospatial variables, in this case to create zones, is that the variables would have been autocorrelated as part of that process. Spatial autocorrelation causes multivariate model coeffients and output to be bias and untrustworthy.
-
-Fortunately there are spatial regression functions that compensate for autocorrelation so that the coefficients and outputs are more realistic. To apply these functions we need to scale the zones using a weights matrix created with a tool that calculates the neighbours of each data feature with a Coordinate Reference System (CRS) for mapping.
+Even though some type of relationship exists within the data, one of the main reasons for a weak result is the autocorrelation applied on the dependent *Zone*. The model applies its algorithm on the variables and expects no correlation between the sequence of values at different parts of the distribution. In this case *Zone* has been clustered with spatial autocorrelation which is probably causing the randomness in the results. Fortunately there are regionalisation methods that compensate for autocorrelation so that the coefficients and outputs are more realistic. To incorporate *space* in the model, the zones need to be weighted with a matrix built from a Coordinate Referencing System (CRS). The weights matrix forces the model to examine the geographical relationship between the observed residuals and neighbouring residuals (aka Nearest-Neighbour method).
 
 <figure>
     <center>
@@ -206,7 +202,7 @@ Fortunately there are spatial regression functions that compensate for autocorre
     <center>
 </figure>
 
-The quality of the weight matrix can then be visually checked before applying it to the model. The nearest neighbor map is different from the clustering map used for segmentation; mainly, there are fewer groups, and the observational points are connected. Having fewer groups will not affect the results because the clustered groups are only for labeling purposes. The weight matrix is added to the model along with other spatial parameters set to display spatial autocorrelation statistics with the summary.
+The quality of the weights matrix can be visually checked before applying to the model. The Nearest-Neighbours map is a little different from the Clustering map, as there are fewer groups and the observational points are connected. Having fewer groups will not affect the results because the clustered groups are now only for labeling purposes. The weights matrix is added to the model along with other parameters to report the spatial autocorrelation statistics in the summary.
 
 ```
 REGRESSION RESULTS
@@ -270,7 +266,7 @@ Joint test for SDM                4        126.117           0.0000
 
 ```
 
-The PROB column in the diagnostics for spatial dependence serves as indicators of spatial autocorrelation, with low values of less than 0.05 indicating evidence of spatial dependence , meaning the value of the variable is related to its neighbors . In this case, as expected, spatial autocorrelation will have an impact. Another value to note is the Akaike Information Criterion, which is an estimate of model prediction error, with lower values representing a better fit. Having spatial dependence requires a spatial lag regression that models the influence of nearest neighbors on the dependent variable (zone).
+The PROB column in the diagnostics for spatial dependence serves as an indicator of spatial autocorrelation, with low values of less than 0.05 indicating evidence of spatial dependence , meaning the value of the variable is related to its neighbors. In this case, spatial autocorrelation is impacting the results. Another value to note is the *Akaike Information Criterion*, which is an estimate of model prediction error, with lower values representing a better fit. Having spatial dependence requires a spatial lag regression that models the influence of nearest neighbors on the dependent variable (zone).
 
 ```
 REGRESSION RESULTS
@@ -308,7 +304,7 @@ Impacts computed using the 'simple' method.
 ================================ END OF REPORT =====================================
 ```
 
-The R-squared value is much higher than the previous, indicating a better-fitting model. The coefficients for group and role have a positive correlation, while substrate has a negative direction. The AIC for this model is also lower than the previous. In contrast to the spatial lag, spatial error regression models spatial interactions with the independent variables, assuming that errors are correlated with nearest neighbors.
+The *R-squared* value is significantly higher than the previous summary, indicating a better-fitting model. The coefficients for *Group* and *Role* exhibit a positive correlation, while *Substrate* shows a negative direction. This is differs from the OLS regression without spatial lag, which indicated *Group* having a negative direction. The AIC for this model also possesses a lower value than the previous one. In contrast to the spatial lag, the spatial error regression models spatial interactions with the independent variables, assuming that errors are correlated with nearest neighbours.
 
 ```
 REGRESSION RESULTS
@@ -338,8 +334,7 @@ S.E of regression   :      1.1504                Schwarz criterion     :     293
 ================================ END OF REPORT =====================================
 
 ```
-
-In this case, the R-squared is much lower than the lag summary, but these are adjusted for autocorrelation. The AIC here is also lower than the lag, indicating that the error model is a better fit. The coefficient correlation direction for the independent variables has not changed. Using the spatial error model, the results can be mapped.
+In this case, the *R-squared* is much lower than the lag summary, but the value is ignored as variables are correlated in error terms using errors of their nearest neighbours. The AIC here is also lower than the lag, indicating that the error model is a better fit. The coefficient correlation direction for the independent variables has not changed. Using the spatial error model, the residuals can be mapped.
 
 <figure>
     <center>
@@ -347,13 +342,13 @@ In this case, the R-squared is much lower than the lag summary, but these are ad
     <center>
 </figure>
 
-The map shows the model predicting changes around the park, with some zones having a darker shade. When compared to the actual map, significant changes are occurring in Zone 5, with a reduction, and in Zone 10, with an increase. The results show changes , but the factors contributing to the change are unknown.
+The map shows the model predicting changes around the park, with some zones having a darker shade. *Role* and *group* is predicted to decrease significantly by 30% in Zone 1 although only four of the seven groups were observed in this zone. Conversely, Zone 10 is predicted to see an increase of 25%. In regards to *Substrate* there is an increase in diversity for Zone 1 where three of the five substrates were previously observed and decrease in Zone 10. These results show a difference but factors contributing to these changes is unknown which can cause confusion. For example *Substrate* is predicted to decline for Zone 10 but increase in *Group* and *Role* by 25% which is confusing since *Group* and *substrate* have a similar correlation strength. A preferred method in this situation is to apply the model to each covariate in isolation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Geographically Weighted Regression
 
-A geographically weighted model applies the weighted matrix to construct separate equations for each independent explanatory variable by incorporating its nearest neighbor . The autocorrelation patterns in the residuals showed some changes around the park; this model can provide insights into which variable is having a greater impact.
+A geographically weighted model applies the weighted matrix to construct separate equations for each independent explanatory variable by incorporating its nearest neighbour. The autocorrelation patterns in the residuals showed some changes around the park; this model can provide insights into which variable is having a greater impact.
 
 <figure>
     <center>
@@ -361,7 +356,7 @@ A geographically weighted model applies the weighted matrix to construct separat
     <center>
 </figure>
 
-It was noted previously that substrates having a negative correlation direction with lesser changes towards the higher zones. The model indicates that Zone 1 is predicted to have the most change with an increase in the types of substrates found with fungi. Zone 8 is moving in the opposite direction.
+The above map immediately shows differences in geography with emphasis in one corner of the park. *Substrate* has a negative correlation indicating more than just soil, tree and wood as substrates predicted to be used in Zone 1. Conversely, there may be less fungi observed on trees or wood in Zone 8. Regardless of direction, greater change is predicted for these two zones.
 
 <figure>
     <center>
@@ -369,7 +364,7 @@ It was noted previously that substrates having a negative correlation direction 
     <center>
 </figure>
 
-Groups have a positive correlation direction with a stronger relationship toward the higher zones. The model predicts an increase in groups for Zone 7. This zone currently consists of six group types, leaving Jelly as the only type predicted to be located in this zone. Zone 3 is predicted to show the largest reduction in groups.
+*Group* showed a positive correlation in these results with the above map indicating a greater than 50% possibility of an increase in fungi groups in Zone 7. This zone currently consists of six group types, leaving *Jelly* as the only type predicted to be observed. *Mushroom* and *Puffball* are the only two groups previously seen in Zone 3; there is a strong possibility that this may decrease.
 
 <figure>
     <center>
@@ -377,9 +372,9 @@ Groups have a positive correlation direction with a stronger relationship toward
     <center>
 </figure>
 
-The characteristics that define the role of fungi in this analysis are either symbiont, recycler, or parasite. The role had the strongest relationship with zones in the correlation matrix and is also strongly coupled with the group. The model has predicted no changes for this variable. The only parasitic group in the dataset is Rust, which has little impact (could not be quantified) on the park.
+The characteristics that define the *Role* or functioning of fungi in this analysis are either symbiont, recycler, or parasite. As noted, the *Role* had the strongest relationship with *Zone* in the correlation matrix and is also strongly coupled with the group. The model shows a 15% change for this variable consistent across all zones. The only parasitic group identified in the dataset is *Rust*, which is modeled as having no major influence. *Rust* has been observed in only two zones.
 
-A symbiotic relationship with fungi is critical for keeping ecosystems in balance and is therefore seen as Darwin's Blind Spot within the patterns of evolution. However, this mutual partnership can shift to parasitism when conditions change. In this analysis , the model predicts no change in the role of fungi, suggesting that the park is in a healthy condition with a balanced ecosystem.
+A symbiotic relationship with fungi is critical for maintaining ecosystems in balance and is therefore viewed as **Darwin's Blind Spot** within the patterns of evolution. However, this mutual partnership can shift to parasitism when conditions change. In this analysis, the model indicates no change in the functioning of fungi, suggesting that the park is in a healthy condition with a balanced ecosystem.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
