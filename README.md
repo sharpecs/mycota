@@ -304,7 +304,7 @@ Impacts computed using the 'simple' method.
 ================================ END OF REPORT =====================================
 ```
 
-The *R-squared* value is significantly higher than the previous summary, indicating a better-fitting model. The coefficients for *Group* and *Role* exhibit a positive correlation, while *Substrate* shows a negative direction. This is differs from the OLS regression without spatial lag, which indicated *Group* having a negative direction. The AIC for this model also possesses a lower value than the previous one. In contrast to the spatial lag, the spatial error regression models spatial interactions with the independent variables, assuming that errors are correlated with nearest neighbours.
+The *R-squared* value is significantly higher than the previous summary, indicating a better-fitting model. The coefficients for *Group* and *Role* exhibit a positive correlation, while *Substrate* shows a negative direction. This differs from the OLS regression without spatial lag, which indicated *Group* having a negative direction. The AIC for this model also possesses a lower value than the previous one. In contrast to the spatial lag, the spatial error regression models spatial interactions with the independent variables, assuming that errors are correlated with nearest neighbours.
 
 ```
 REGRESSION RESULTS
@@ -356,7 +356,7 @@ A geographically weighted model applies the weighted matrix to construct separat
     <center>
 </figure>
 
-The above map immediately shows differences in geography with emphasis in one corner of the park. *Substrate* has a negative correlation indicating more than just soil, tree and wood as substrates predicted to be used in Zone 1. Conversely, there may be less fungi observed on trees or wood in Zone 8. Regardless of direction, greater change is predicted for these two zones.
+The above map immediately reveals differences in geography with emphasis in one corner of the park. *Substrate* has a negative correlation indicating more than just soil, tree and wood as substrates predicted to be used in Zone 1. Conversely, there may be fewer fungi observed on trees or wood in Zone 8. Another interesting factor is that there is less human influence and management in Zone 8 compared to Zone 1.
 
 <figure>
     <center>
@@ -374,7 +374,7 @@ The above map immediately shows differences in geography with emphasis in one co
 
 The characteristics that define the *Role* or functioning of fungi in this analysis are either symbiont, recycler, or parasite. As noted, the *Role* had the strongest relationship with *Zone* in the correlation matrix and is also strongly coupled with the group. The model shows a 15% change for this variable consistent across all zones. The only parasitic group identified in the dataset is *Rust*, which is modeled as having no major influence. *Rust* has been observed in only two zones.
 
-A symbiotic relationship with fungi is critical for maintaining ecosystems in balance and is therefore viewed as **Darwin's Blind Spot** within the patterns of evolution. However, this mutual partnership can shift to parasitism when conditions change. In this analysis, the model indicates no change in the functioning of fungi, suggesting that the park is in a healthy condition with a balanced ecosystem.
+A symbiotic relationship with fungi is critical for keeping ecosystems in balance and is therefore viewed as **Darwin's Blind Spot** within the patterns of evolution. However, this mutual partnership can shift to parasitism when conditions change. In this analysis, the model indicates no change in the current balanced functioning of fungi, suggesting that the park is in a healthy state with a balanced ecosystem.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
