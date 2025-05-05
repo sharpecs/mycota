@@ -18,7 +18,7 @@ The purpose of this exercise is to understand the principles behind the followin
 
 * Geographically Weighted Regression (GWR) is another tool used to model spatially varying relationships. The main difference is that it creates separate models for each independent feature which may provide insights into additional factors related to that feature.
 
-**Darwin's blind spot** is a hypothesis that symbiosis is insignificant in nature. This analysis will investigate the hypothesis using the regression techniques and the observations collected.
+**Darwin's blind spot** is a hypothesis that cooperation is significant in nature. This analysis will investigate the hypothesis using the regression techniques and the observations collected.
 
 
 ### Content
