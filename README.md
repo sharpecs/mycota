@@ -372,9 +372,9 @@ The above map immediately reveals differences in geography with emphasis in one 
     <center>
 </figure>
 
-The characteristics that define the *Role* or functioning of fungi in this analysis are either symbiont, recycler, or parasite. As noted, the *Role* had the strongest relationship with *Zone* in the correlation matrix and is also strongly coupled with the group. The model shows a 15% change for this variable consistent across all zones. The only parasitic group identified in the dataset is *Rust*, which is modeled as having no major influence. *Rust* has been observed in only two zones.
+The traits that identify the *Role* or function of fungi in this analysis are symbiont, recycler, or parasite. As mentioned, the *Role* exhibited the most significant connection with *Zone* in the correlation matrix and is also closely associated with *Group*. The model indicates a 15% alteration for this variable that is uniform across all areas. The sole parasitic group identified in the dataset is *Rust*, which is represented as having minimal impact. *Rust* has been observed in only two zones.
 
-A symbiotic relationship with fungi is critical for keeping ecosystems in balance and is therefore viewed as **Darwin's Blind Spot** within the patterns of evolution. However, this mutual partnership can shift to parasitism when conditions change. In this analysis, the model indicates no change in the current balanced functioning of fungi, suggesting that the park is in a healthy state with a balanced ecosystem.
+A symbiotic association with fungi is essential for maintaining balanced ecosystems and is thus regarded as **Darwin's Blind Spot** in evolutionary patterns. However, this cooperative partnership can shift to parasitism when conditions change. This analysis shows minimal changes in the existing balanced operation of fungi at the park and provides some support for this hypothesis.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
